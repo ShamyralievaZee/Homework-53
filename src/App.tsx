@@ -8,6 +8,7 @@ const App: React.FC = () => {
         { id: '1', text: 'Do homework.' },
         { id: '2', text: 'Feed the cat.' },
         { id: '3', text: 'Finish up an assignment.' },
+        { id: '4', text: 'Clean the house.' },
     ]);
 
     const [currentTask, setCurrentTask] = useState<string>('');
@@ -29,7 +30,7 @@ const App: React.FC = () => {
 
     return (
         <div>
-            <h1>Task List</h1>
+            <h1 className='mainTitle'>All Tasks</h1>
             <AddTaskForm currentTask={currentTask} setCurrentTask={setCurrentTask} addTask={addTask} />
             <div>
                 {tasks.map(task => (

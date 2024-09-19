@@ -3,9 +3,9 @@ import {ITask} from '../types.ts';
 
 const Task: React.FC<ITask> = ({id, taskText, deleteTask}) => {
     return (
-        <div>
+        <div className='task-container'>
             <span>{taskText}</span>
-            <button onClick={() => deleteTask(id)}>Delete</button>
+            <button onClick={() => deleteTask(id)} className='deleteBtn'>X</button>
         </div>
     );
 };

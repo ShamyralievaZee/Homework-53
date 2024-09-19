@@ -8,6 +8,11 @@ export interface  IForm {
 
 export interface ITask {
     id: string;
-    text: string;
+    taskText: string;
     deleteTask: (id:string) => void;
+}
+
+export interface IProps {
+    id: string;
+    text: string;
 }
