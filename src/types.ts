@@ -5,3 +5,9 @@ export interface  IForm {
     setCurrentTask:(task:string) => void;
     addTask:(e:React.FormEvent) => void;
 }
+
+export interface ITask {
+    id: string;
+    text: string;
+    deleteTask: (id:string) => void;
+}
